@@ -1,4 +1,4 @@
-from part1 import sign, are_levels_safe
+from part1 import are_levels_safe
 
 def try_all_removals(levels: list[int]) -> bool:
     for i in range(len(levels)):
