@@ -13,7 +13,7 @@ def main():
     list1 = []
     list2 = {}
 
-    with open("input") as f:
+    with open("01/input") as f:
         for line in f:
             num1, num2 = line.split("   ")
             list1.append(int(num1))

@@ -26,7 +26,7 @@ def are_levels_safe(levels: list[int]) -> bool:
 
 
 def main():
-    with open("input") as f:
+    with open("02/input") as f:
 
         safe_reports = 0
 

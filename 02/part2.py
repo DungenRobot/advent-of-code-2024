@@ -38,7 +38,7 @@ def try_all_removals(levels: list[int]) -> bool:
 
 
 def main():
-    with open("input") as f:
+    with open("02/input") as f:
 
         safe_reports = 0
 
