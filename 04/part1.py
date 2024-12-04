@@ -1,9 +1,3 @@
-directions: list[tuple[int, int]] = [
-    (1, 0),
-    (0, 1),
-    (1, 1),
-    (1,-1)
-]
 
 def str_exists(grid: list[str], x: int, y: int, dx: int, dy: int, string: str) -> bool:
     while string != "":
@@ -28,11 +22,9 @@ def main():
             char = grid[y][x]
             if char != 'X': continue
 
-            for dx, dy in directions:
-                if str_exists(grid, x, y, dx, dy, "XMAS"):
-                    total += 1
-                if str_exists(grid, x, y, -dx, -dy, "XMAS"):
-                    total += 1
+            for dx in range(-1, 2):
+                for dy in range(-1, 2):
+                    if str_exists(grid, x, y, dx, dy, "XMAS"): total += 1
     print(total)
 
 
