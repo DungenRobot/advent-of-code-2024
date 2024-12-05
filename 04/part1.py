@@ -1,4 +1,3 @@
-
 def str_exists(grid: list[str], x: int, y: int, dx: int, dy: int, string: str) -> bool:
     while string != "":
         if not x in range(len(grid[0])) or not y in range(len(grid)): return False
