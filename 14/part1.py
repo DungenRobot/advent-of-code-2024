@@ -49,6 +49,7 @@ def count_robots(robots: list[tuple[int, int, int ,int]], max_x: int, max_y: int
 
 
 def print_robots(robots, max_x, max_y):
+    s = ''
     for y in range(max_y):
         for x in range(max_x):
             count = 0
@@ -57,10 +58,11 @@ def print_robots(robots, max_x, max_y):
                 if rx == x and ry == y:
                     count += 1
             if count == 0:
-                print('.', end='')
+                s += '.'
             else:
-                print(count, end='')
-        print()
+                s += str(count)
+        s += '\n'
+    print(s)
 
 
 

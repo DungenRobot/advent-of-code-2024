@@ -33,7 +33,7 @@ def main():
 
     while not are_most_neighbors(robots, 0.02):
         move_robots(robots, 1, 101, 103)
-        print(i)
+        #print(i)
         #print_robots(robots, 101, 103)
         i += 1
 
